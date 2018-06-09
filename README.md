@@ -38,7 +38,7 @@ The following code stub will give you a dictionary containing the access token t
   **3 legged auth**
 Before doing 3 legged auth you need to get the permission from the user, So when you are creating a developer account in Lyft provide a redirect URL which will redirect the customer to this URL to give permission. More information can be found [here](https://developer.lyft.com/docs/authentication#section-3-legged-flow-for-accessing-user-specific-endpoints)
 ```python
-    from lyft.authentication import LyftUserAuth
+    from lyft.authentication.auth import LyftUserAuth
     user_auth = LyftUserAuth({"client_id": "<client_id>", "client_secret": "<client_secret>"}, [<list of scopes>], state, sandbox_mode=True/False})
     user_auth.get_authorization_uri()  #This URL is used to redirect the user
     user_auth.get_access_token("authorization_code")  # You will get authorization code once the user accepts
