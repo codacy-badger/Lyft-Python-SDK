@@ -81,20 +81,20 @@ The response references to the below methods is available [here](https://develop
     # To request ride
     ride_obj.create_ride_request(ride_type, src_lat, src_lng, dest_lat, dest_lng, src_address=None, dest_address=None)
 
-	# To get ride details
-	ride_obj.get_ride_details(ride_id)
+   # To get ride details
+   ride_obj.get_ride_details(ride_id)
+   
+   # To update destination
+   ride_obj.update_destination(ride_id, lat, lng, address=None)
 
-	# To update destination
-	ride_obj.update_destination(ride_id, lat, lng, address=None)
+   # To give rating to driver
+   ride_obj.set_rating_and_tip(ride_id, rating, tip_amount=None, currency="USD")
 
-	# To give rating to driver
-	ride_obj.set_rating_and_tip(ride_id, rating, tip_amount=None, currency="USD")
+   # To get receipt
+   ride_obj.get_receipt(ride_id)
 
-	# To get receipt
-	ride_obj.get_receipt(ride_id)
-
-	# To cancel ride
-	ride_obj.cancel_ride(ride_id)
+  # To cancel ride
+  ride_obj.cancel_ride(ride_id)
 ```
 
 
