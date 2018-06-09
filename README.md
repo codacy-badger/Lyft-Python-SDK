@@ -23,7 +23,7 @@ Lyft API follows O-Auth for authentication and it uses two types of authenticati
 **2 legged auth**
 The following code stub will give you a dictionary containing the access token to do the 2 legged API calls.
 ```python
-    from lyft.authentication import LyftPublicAuth
+    from lyft.authentication.auth import LyftPublicAuth
     auth = LyftPublicAuth({"client_id": "<client_id>", "client_secret": "<client_secret>"}, sandbox_mode=True/False})
     auth.access_token()
 ```
