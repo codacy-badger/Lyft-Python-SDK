@@ -25,7 +25,7 @@ The following code stub will give you a dictionary containing the access token t
 ```python
     from lyft.authentication.auth import LyftPublicAuth
     auth = LyftPublicAuth({"client_id": "<client_id>", "client_secret": "<client_secret>"}, sandbox_mode=True/False})
-    auth.access_token()
+    auth.get_access_token()
 ```
 **response**
 ```python
