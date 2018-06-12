@@ -1,5 +1,7 @@
 # Lyft-Python-SDK
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6c6544ef2445418abfd751fdeb58c39b)](https://app.codacy.com/app/vmanikes/Lyft-Python-SDK?utm_source=github.com&utm_medium=referral&utm_content=vmanikes/Lyft-Python-SDK&utm_campaign=badger)
+
 Welcome to Lyft-Python-SDK. This SDK enables Python developers to programmatically interact with Lyft's rider and driver network using Lyft API.
 
 ## Authors
